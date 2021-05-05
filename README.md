@@ -60,6 +60,8 @@ Epoch 100/100
 ![Val Accuracy](images/4xVal-accuracu.png)
 
 After the model was training, we took a look at some predictions. It can be informative observe miss-categorization due to confounding variables such as ambiguous images, extremes angles, or foreign objects. For instance there are common elements shared in a category that throw off the model when they appear in others, such as people often appearing in streets.
+
 ![Street Building](images/street-builing.png)
+
 
 The project was meant to be an exercise in building and working with neural nets, and while I would consider it a success, I also learned the value in pretrained models. The time it took to build and train these models would have been much better spent using pretrained weights from a common library such as ResNet.
