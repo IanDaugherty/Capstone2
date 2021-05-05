@@ -1,6 +1,6 @@
 # <a name="top">cNN Image Classification</a>
 
-This project used Python and TensorFlow to explore convolutional neural nets.A Powerpoint was used as an endpoint presentation, in which I discuss how I explored the data, built a series of models, and analyze the results. The purpose was more to gain a better understanding of the leavers used to control models in TF, and the best model recorded achieved an accuracy of %84. A number of prediction samples are looked at, and the errors discussed.  
+This project used Python and TensorFlow to explore convolutional neural nets.A Powerpoint was used as an endpoint presentation, in which I discussed how I explored the data, built and trained series of models, and analyze the results. The purpose was to gain a better understanding of the leavers used to control models in TF useing Keas, and the best model recorded achieved an accuracy of %84. A number of prediction samples are looked at, and the errors discussed.  
 ______________________________________________
 
 ## Links
@@ -30,7 +30,7 @@ The [Intel Image Dataset](https://www.kaggle.com/puneet6060/intel-image-classifi
 - 'sea' -> 4,
 - 'street' -> 5 
 
-The data was originally provided by Intel for data science competitions, and was found on open Kaggle project. The categories are relatively evenly distributed, and the set includes training, testing, and unlabeled images. Samples were resized and normalized before training. 
+The data was originally provided by Intel for data science competitions, and was found on an open Kaggle project. The categories are relatively evenly distributed, and the set includes training, testing, and unlabeled images. Samples were resized and normalized before training. 
 
 - 14,034 Training Image
 - 3000 Testing Images
@@ -45,7 +45,7 @@ ______________________________________________
 
 ## Training, Models, and Predictions
 
-A variety of models were built in order to experiment with complexity in their depth and layers. Parameters ranged from under 1mil to more than 34 million. Most models came to similar accuracy and validation loss, with a mid range model achieving %84 and %1.8 respectively. 
+A variety of models were built in order to experiment with complexity in their depth and layers. Parameters ranged from under 1mil to more than 34 million. Most models arrived at a similar accuracy and validation loss, with a mid-sized model achieving %84 and %1.8 respectively. 
 
 ```
 Epoch 97/100
@@ -59,7 +59,7 @@ Epoch 100/100
 ```
 ![Val Accuracy](images/4xVal-accuracu.png)
 
-After the model was training, we took a look at some predictions. It can be informative to look at some of the miss-categorization due to some pretty extreme color pallets and angles. There are also common elements shared in a category that throw off the model when they appear in other, such as people often appear in streets.
+After the model was training, we took a look at some predictions. It can be informative observe miss-categorization due to confounding variables such as ambiguous images, extremes angles, or foreign objects. For instance there are common elements shared in a category that throw off the model when they appear in others, such as people often appearing in streets.
 ![Street Building](images/street-builing.png)
 
-The project was meant to be an exercise in building and working with neural nets, and while I would consider it a success in that I am more familiar with them, I also learned the value in pretrained models. The time it took to build and train these models would have been much better spent using pretrained weights from a common library such as ResNet.
+The project was meant to be an exercise in building and working with neural nets, and while I would consider it a success, I also learned the value in pretrained models. The time it took to build and train these models would have been much better spent using pretrained weights from a common library such as ResNet.
