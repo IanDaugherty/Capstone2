@@ -1,20 +1,35 @@
-# Capstone2
-Capstone two project for Galvanize, utilizing ML
+# <a name="top">cNN Image Classification</a>
 
-Ian Daugherty
-<h1>Capstone 2 proposal</h1>
+This project used Python and TensorFlow to explore convolutional neural nets.A Powerpoint was used as an endpoint presentation, in which I discuss how I explored the data, built a series of models, and analyze the results. The purpose was more to gain a better understanding of the leavers used to control models in TF, and the best model recorded achieved an accuracy of %84. A number of prediction samples are looked at, and the errors discussed.  
+______________________________________________
+
+## Links
+- [Intel Image Dataset](https://www.kaggle.com/puneet6060/intel-image-classification)
+Kaggle project hosting the dataset
+- [cNN Presentation](https://docs.google.com/presentation/d/15pTsUTayuuk3Yjr66WRyAtrebqUAKJjbbTBJont3CSU/edit?usp=sharing)
+A google docs hosting my original presentation
 
 
-<h2>**Emoji classification using unsupervised learning**</h2>
+## Data
 
-Emojis have rapidly grown in popularity in the age of the smart phone. These internet colloquialism have permeated modern conversation, but their meaning can be difficult to decipher, often times used because of their ambiguity. 
+The [Intel Image Dataset](https://www.kaggle.com/puneet6060/intel-image-classification) consists labeled photos of scenery. 
 
-Fortunately, emojis are commonly used in online chat rooms, giving us an abundance of use case scenarios to process. Hundreds of thousands of people tune in every day to watch ‘steamers’ live-stream content, and viewers can talk to each other and their favorite streamer through a chatroom.
+![Example](images/building-examp.png)
+- 'buildings' -> 0 
+- 'forest' -> 1,
+- 'glacier' -> 2,
+- 'mountain' -> 3,
+- 'sea' -> 4,
+- 'street' -> 5 
 
-Using sentiment analysis, I will try to infer emoji sentiment based on surrounding context. Text based sentiment analysis will work as a fall back project. Chat text can easily be saved as text files through an IRC client. The logs of several different streaming communities can be compared to see how emoji use differs across communities. 
+The data was originally provided by Intel for data science competitions, and was found on open Kaggle project. The categories are relatively evenly distributed, and the set includes training, testing, and unlabeled images. Samples were resized and normalized before training. 
 
-<h2>**Intel Image Classification**</h2>
+- 14,034 Training Image
+- 3000 Testing Images
+- 7000 Non-labeled Images
+![Testing Pie](images/testing-cats.png)
+![Training pie](images/training_cats.png)
 
-Using a kaggle data set of labeled images, I will use a CNN to classify images. After the model is trained, I would like to apply the model to images of objects or scenery not included in the set to see how the model performs. 
 
-https://www.kaggle.com/puneet6060/intel-image-classification/activity
+
+
